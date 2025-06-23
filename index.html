@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clube de Regatas do Flamengo</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #000000; /* preto */
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #e10600; /* vermelho Flamengo */
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      border-bottom: 5px solid #fff;
+    }
+
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e10600;
+    }
+
+    main {
+      flex: 1;
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    main h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      text-align: center;
+      text-shadow: 2px 2px #111;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .logo {
+      display: block;
+      max-width: 150px;
+      margin: 0 auto 30px;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      color: #bbb;
+      border-top: 3px solid #e10600;
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        padding: 15px 10px;
+      }
+      
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      main h1 {
+        font-size: 2rem;
+      }
+
+      main p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      .logo {
+        max-width: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Flamengo
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">História</a>
+    <a href="#">Elenco</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <main>
+    <img
+      class="logo"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/CR_Flamengo_logo.svg/800px-CR_Flamengo_logo.svg.png"
+      alt="Logo Flamengo"
+    />
+    <h1>Clube de Regatas do Flamengo</h1>
+    <p>
+      Fundado em 1895, o Flamengo é um dos clubes mais populares e vitoriosos do futebol brasileiro,
+      com uma enorme torcida apaixonada espalhada pelo país e pelo mundo.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Flamengo - Todos os direitos reservados
+  </footer>
+</body>
+</html>
